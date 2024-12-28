@@ -17,21 +17,26 @@
       };
     </script>
     <title>Responsive Landing Page</title>
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS Link -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="flex flex-col gap-3 h-screen mx-auto">
+  <body class="flex flex-col gap-3 h-screen">
+    <!-- Hero Section -->
     <section class="flex flex-col w-full">
       <div class="hero">
         <div class="max-w-3xl flex flex-col gap-4">
           <div class="tracking-tigher leading-0 flex flex-col font-black">
-            <h1 class="md:text-8xl text-5xl text-[#de041c]">LOREM IPSUM</h1>
-            <h2 class="md:text-6xl text-4xl mt-[-1rem]">DOLOR SIT AMET ARAN</h2>
+            <h1 class="text-[#de041c] md:text-8xl text-5xl">LOREM IPSUM</h1>
+            <h2 class="md:text-6xl text-4xl md:mt-[-1rem] mt-[-0.5rem]">
+              DOLOR SIT AMET ARAN
+            </h2>
           </div>
-          <p class="font-bold mb-8 max-w-2xl">
+          <p class="max-w-2xl font-bold">
             Pri ei sumo falli, homero euismod reformidans sed cu, stet ornatus
             eos at. Cu sed nulla praesent, nihil voluptaria liberavisse ut usu,
             mei iusto nost.
@@ -41,7 +46,7 @@
       <div class="red-bar" />
     </section>
 
-    <section class="xl:hidden flex flex-col h-full w-full items-center">
+    <section class="xl:hidden flex flex-col w-full h-full items-center">
       <iframe
         src="https://www.youtube.com/embed/NpEaa2P7qZI"
         title="YouTube video"
@@ -51,32 +56,34 @@
       ></iframe>
     </section>
 
-    <section class="grid grid-cols-1 lg:grid-cols-2 w-full gap-10">
-      <div class="grid grid-cols-5 gap-2 relative">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 h-full gap-10">
+      <div class="grid grid-cols-6 gap-2 relative">
         <img
-          src="./public/IMAGE_1.jpg"
+          src="/public/IMAGE_1.jpg"
           alt="Gallery Image 1"
           class="col-span-3 w-full h-full"
         />
-        <div class="row-span-4 col-span-2 gap-2 grid h-full place-items-start">
+        <div
+          class="row-span-4 col-span-2 gap-2 grid grid-cols-subgrid h-full place-items-start"
+        >
           <iframe
             src="https://www.youtube.com/embed/NpEaa2P7qZI"
             title="YouTube video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            class="aspect-video shadow-around w-full absolute -top-[40%] z-10 hidden xl:block"
+            class="aspect-video shadow-around w-full absolute -top-[55%] z-10 hidden xl:block"
           ></iframe>
           <img
-            src="./public/IMAGE_2.jpg"
+            src="public/IMAGE_2.jpg"
             alt="Gallery Image 2"
             class="row-span-5 col-span-2 place-self-end"
           />
-          <img src="./public/IMAGE_3.jpg" alt="Gallery Image 3" class="" />
+          <img src="public/IMAGE_3.jpg" alt="Gallery Image 3" />
         </div>
         <div class="row-span-3 col-span-3 grid grid-cols-subgrid">
-          <img src="./public/IMAGE_5.jpg" alt="Gallery Image 5" />
+          <img src="public/IMAGE_5.jpg" alt="Gallery Image 5" class="h-full" />
           <img
-            src="./public/IMAGE_4.jpg"
+            src="public/IMAGE_4.jpg"
             alt="Gallery Image 4"
             class="col-span-2 h-full"
           />
@@ -89,7 +96,8 @@
           class="flex flex-col justify-center xl:justify-start w-full lg:p-0 p-4 tracking-[-0.05rem] leading-0"
         >
           <span class="text-2xl font-black">WELCOME TO YOUR</span>
-          <span class="text-4xl font-black text-[#de041c] mt-[-0.8rem]"
+          <span
+            class="xs:text-4xl text-3xl font-black text-[#de041c] mt-[-0.8rem]"
             >SKILLS ASSESSMENT.</span
           >
         </h2>
